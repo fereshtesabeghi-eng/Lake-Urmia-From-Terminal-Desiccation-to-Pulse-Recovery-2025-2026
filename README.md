@@ -37,8 +37,7 @@ A side-by-side comparison illustrating the rapid inundation of the flattened pla
 ![Nadir 2025](visuals/2025.png)
 
 ### 2. Pulse Recovery (Apr-May 2026)
-![Pulse 2026](visuals/pulse 2026.png)
-
+current 2026.png
 ### 3. Current Status (June 2026)
 ![Current 2026](visuals/current 2026.png)
 
