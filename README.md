@@ -33,6 +33,7 @@ This map visualizes the spatial footprint of the recovery:
 ### 3. Temporal Comparison (2025 vs. 2026)
 
 A side-by-side comparison illustrating the rapid inundation of the flattened playa bed during the 2026 spring season.
+2025.png
 
 ## Google Earth Engine Script
 
