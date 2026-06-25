@@ -33,7 +33,17 @@ This map visualizes the spatial footprint of the recovery:
 ### 3. Temporal Comparison (2025 vs. 2026)
 
 A side-by-side comparison illustrating the rapid inundation of the flattened playa bed during the 2026 spring season.
-2025.png
+### 1. Terminal Nadir (Aug-Sep 2025)
+![Nadir 2025](visuals/LakeUrmia_Nadir_2025.png)
+
+### 2. Pulse Recovery (Apr-May 2026)
+![Pulse 2026](visuals/LakeUrmia_Pulse_2026.png)
+
+### 3. Current Status (June 2026)
+![Current 2026](visuals/LakeUrmia_Current_2026.png)
+
+### 4. Recovery Change Map
+![Change Map](visuals/Recovery_Change_Map.png)
 
 ## Google Earth Engine Script
 
