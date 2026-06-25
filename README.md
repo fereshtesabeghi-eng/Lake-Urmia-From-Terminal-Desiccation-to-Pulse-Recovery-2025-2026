@@ -1,4 +1,46 @@
-++ # Monitoring Lake Urmia Surface Water Changes (2025–2026) ++This project utilizes Google Earth Engine (GEE) to analyze and visualize the dramatic hydrological shifts in Lake Urmia, specifically focusing on the transition from the critical "Terminal Nadir" observed in late 2025 to the "Pulse Recovery" throughout the first half of 2026.++ ## Project Overview ++Lake Urmia, located in northwestern Iran, has transitioned from one of the world's largest hypersaline lakes to a highly volatile basin. By integrating multi-sensor Landsat 8/9 data, this repository captures the contrast between the severe desiccation of 2025 and the sudden, spring-fed recovery in 2026. This research provides a data-driven look at the lake’s resilience and the impacts of regional water management and seasonal inflows.++ ## Key Features ++Multi-Phase Temporal Analysis: Quantifies surface water extent across three distinct hydrological states: Terminal Nadir (2025), Spring Pulse (2026), and Summer Equilibrium (2026).Change Detection Mapping: A specialized visual layer highlighting "Persistent Water" (blue), "New Pulse Water" (cyan), and "Lost Water" (red).Geopolitical Contextualization: By mapping the spatial distribution of inflows, this research serves as a foundation for understanding the "Lagged Inflow Effect" influenced by dam management and climate variability.Automated Data & Visual Export: Scripts provided to export statistical trends and high-resolution maps directly to Google Drive.++ ## Visualizations ++1. Surface Water Area TrendThis analysis captures recent volatility, documenting the shift from the lake’s low of ~2,702 $km^2$ in late 2025 to a recovery of ~3,363 $km^2$ by mid-2026.2. The "Pulse" Change MapThis map visualizes the spatial footprint of the recovery.Blue: Permanent/Persistent water.Cyan: New water coverage (Pulse).Red: Areas of continued desiccation.3. Temporal Comparison (2025 vs. 2026)A side-by-side comparison illustrating the rapid inundation of the flattened playa bed during the 2026 spring season.++ ## Google Earth Engine Script ++The following script performs the multispectral classification using Landsat 8/9, computes the MNDWI (Modified Normalized Difference Water Index), and generates the area statistics.JavaScript// 1. Define ROI and Merge Landsat 8/9 Collections
+To ensure your GitHub repository reads perfectly, I have applied the `++` topic markers to clearly distinguish your project sections from the supporting details. You can copy this entire block directly into your `README.md` file.
+
+---
+
+++ # Monitoring Lake Urmia Surface Water Changes (2025–2026) ++
+
+This project utilizes Google Earth Engine (GEE) to analyze and visualize the dramatic hydrological shifts in Lake Urmia, specifically focusing on the transition from the critical "Terminal Nadir" observed in late 2025 to the "Pulse Recovery" throughout the first half of 2026.
+
+++ ## Project Overview ++
+
+Lake Urmia, located in northwestern Iran, has transitioned from one of the world's largest hypersaline lakes to a highly volatile basin. By integrating multi-sensor Landsat 8/9 data, this repository captures the contrast between the severe desiccation of 2025 and the sudden, spring-fed recovery in 2026. This research provides a data-driven look at the lake’s resilience and the impacts of regional water management and seasonal inflows.
+
+++ ## Key Features ++
+
+* **Multi-Phase Temporal Analysis:** Quantifies surface water extent across three distinct hydrological states: Terminal Nadir (2025), Spring Pulse (2026), and Summer Equilibrium (2026).
+* **Change Detection Mapping:** A specialized visual layer highlighting "Persistent Water" (blue), "New Pulse Water" (cyan), and "Lost Water" (red).
+* **Geopolitical Contextualization:** By mapping the spatial distribution of inflows, this research serves as a foundation for understanding the "Lagged Inflow Effect" influenced by dam management and climate variability.
+* **Automated Data & Visual Export:** Scripts provided to export statistical trends and high-resolution maps directly to Google Drive.
+
+++ ## Visualizations ++
+
+### 1. Surface Water Area Trend
+
+This analysis captures recent volatility, documenting the shift from the lake’s low of ~2,702 $km^2$ in late 2025 to a recovery of ~3,363 $km^2$ by mid-2026.
+
+### 2. The "Pulse" Change Map
+
+This map visualizes the spatial footprint of the recovery.
+
+* **Blue:** Permanent/Persistent water.
+* **Cyan:** New water coverage (Pulse).
+* **Red:** Areas of continued desiccation.
+
+### 3. Temporal Comparison (2025 vs. 2026)
+
+A side-by-side comparison illustrating the rapid inundation of the flattened playa bed during the 2026 spring season.
+
+++ ## Google Earth Engine Script ++
+
+The following script performs the multispectral classification using Landsat 8/9, computes the MNDWI (Modified Normalized Difference Water Index), and generates the area statistics.
+
+```javascript
+// 1. Define ROI and Merge Landsat 8/9 Collections
 var roi = geometry; // Ensure your geometry polygon is imported
 var l8 = ee.ImageCollection("LANDSAT/LC08/C02/T1_L2");
 var l9 = ee.ImageCollection("LANDSAT/LC09/C02/T1_L2");
@@ -31,4 +73,9 @@ print('Pulse Recovery Area (m²):', areaPulse.get('MNDWI'));
 
 // 5. Change Detection Visualization
 var changeMap = waterPulse.add(addMNDWI(nadir2025).select('MNDWI').gt(0).multiply(2));
-Map.addLayer(changeMap.selfMask(), {min: 1, max: 3, palette: ['cyan', 'red', 'blue']}, 'Rec
+Map.addLayer(changeMap.selfMask(), {min: 1, max: 3, palette: ['cyan', 'red', 'blue']}, 'Recovery Change Map');
+
+```
+
+---
+
