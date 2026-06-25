@@ -18,6 +18,9 @@ Lake Urmia, located in northwestern Iran, has transitioned from one of the world
 ### 1. Surface Water Area Trend
 
 This analysis captures recent volatility, documenting the shift from the lake’s low of ~2,702 km² in late 2025 to a recovery of ~3,363 km² by mid-2026.
+Water Area 2025 (sq meters): 2702393424.7341213
+Water Area 2026 (sq meters): 3307014090.704633
+Water Area June 2026 (sq meters): 3363486774.940714
 
 ### 2. The "Pulse" Change Map
 
