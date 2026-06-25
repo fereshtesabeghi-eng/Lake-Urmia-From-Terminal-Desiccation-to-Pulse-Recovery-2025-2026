@@ -37,7 +37,7 @@ A side-by-side comparison illustrating the rapid inundation of the flattened pla
 ![Nadir 2025](visuals/2025.png)
 
 ### 2. Pulse Recovery (Apr-May 2026)
-current 2026.png
+[current 2026.png](https://github.com/fereshtesabeghi-eng/Lake-Urmia-From-Terminal-Desiccation-to-Pulse-Recovery-2025-2026/blob/c7d824ebb1e36f9722ce05242003ddd2708ec872/2025.png)
 ### 3. Current Status (June 2026)
 ![Current 2026](visuals/current 2026.png)
 
