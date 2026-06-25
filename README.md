@@ -4,7 +4,7 @@ This project utilizes Google Earth Engine (GEE) to analyze and visualize the dra
 
 ## Project Overview
 
-Lake Urmia, located in northwestern Iran, has transitioned from one of the world's largest hypersaline lakes to a highly volatile basin. By integrating multi-sensor Landsat 8/9 data, this repository captures the contrast between the severe desiccation of 2025 and the sudden, spring-fed recovery in 2026. This research provides a data-driven look at the lake’s resilience and the impacts of regional water management and seasonal inflows.
+Lake Urmia, located in northwestern Iran, has transitioned from one of the world's largest hypersaline lakes to a highly volatile basin. By integrating multi-sensor Landsat 8/9 data, this repository captures the contrast between the severe desiccation of 2025 and the sudden, spring-fed recovery in 2026. This research provides a data-driven look at the lake’s resilience and the impacts of regional water management and seasonal inflows. The analysis used a baseline "Nadir" composite from August 1 to September 30, 2025, compared against a "Pulse" composite from April 1 to May 31, 2026, and a final "Summer Equilibrium" observation from June 1 to June 25, 2026.
 
 ## Key Features
 
